@@ -12,6 +12,7 @@ The tests cover dynamic content verification and footer link validation, using:
 - Locators - Mix of CSS and XPath selectors
 - Browsers - Edge, Firefox (run in parallel)
 - Logger - Custom logger tracking product under verification
+- Reporter - JUnit (XML reports in ./results)
 
 __Test Scenarios__
 
