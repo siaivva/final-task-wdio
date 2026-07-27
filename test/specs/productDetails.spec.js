@@ -28,8 +28,10 @@ describe('UC-1: Product Details Verification', () => {
 
         await expect(detailsData.title).toBe(inventoryData.title);
         await expect(detailsData.price).toBe(inventoryData.price);
+        await expect(detailsData.description).toBe(inventoryData.description);
 
         Logger.logComparison('Price', inventoryData.price, detailsData.price);
+        Logger.logComparison('Description', inventoryData.description, detailsData.description);
 
         // And user adds the item to the cart from the Details Page
         await ProductDetailsPage.addToCart();

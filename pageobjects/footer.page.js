@@ -1,9 +1,8 @@
 const Page = require('./page');
 
 class FooterPage extends Page {
-    get footer() { return $('.footer'); }
-
     // CSS selectors
+    get footer() { return $('.footer'); }
     get twitterLink() { return $('.social_twitter a'); }
     get facebookLink() { return $('.social_facebook a'); }
 
