@@ -1,4 +1,4 @@
-const Page = require('./page');
+import Page from "./page";
 
 class FooterPage extends Page {
     // CSS selectors
@@ -11,14 +11,6 @@ class FooterPage extends Page {
 
     async scrollToFooter() {
         await this.footer.scrollIntoView();
-    }
-
-    async socialLinksExist() {
-        return {
-            twitter: await this.twitterLink.isExisting(),
-            facebook: await this.facebookLink.isExisting(),
-            linkedin: await this.linkedinLink.isExisting()
-        };
     }
 }
 
